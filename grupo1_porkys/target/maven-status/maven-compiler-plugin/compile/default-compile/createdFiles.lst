@@ -1,0 +1,8 @@
+porky\controllers\ProductoControlador.class
+porky\controllers\RecetaControlador.class
+porky\config\DataBaseConnection.class
+porky\DAO\ProductoDAO.class
+porky\DAO\RecetaDAO.class
+porky\models\Producto.class
+porky\PorkyMain.class
+porky\models\Receta.class
