@@ -28,7 +28,8 @@ public class RecetasDerivadasControlador {
 
     public static Route agregarRecetaDerivada = (Request req, Response res) -> {
         try {
-
+            Recetas receta = gson.fromJson(req.body(), Recetas.class);
+            RecetasDerivadas recetaDerivada = gson.fromJson(req.body(), RecetasDerivadas.class);
             ArrayList<IngredientesXrecetas> ingredientesXrecetas = gson.fromJson(
                     gson.fromJson(req.body(), JsonObject.class).get("ingredientesXrecetas").toString(),
                     new TypeToken<ArrayList<IngredientesXrecetas>>() {
@@ -41,11 +42,27 @@ public class RecetasDerivadasControlador {
                     new TypeToken<ArrayList<RecetasDerivadasXrecetasBases>>() {
                     }.getType());
 
-            recetaDAO.agregarReceta(gson.fromJson(req.body(), Recetas.class));
-            recetaDerivadaDAO.agregarRecetaDerivada(gson.fromJson(req.body(), RecetasDerivadas.class));
-            ingredientesXrecetas.forEach(ingredienteXreceta -> {
-                recetaDAO.agregarIngredienteXreceta(ingredienteXreceta);
-            });
+            if (receta == null || receta.getNombre() == null || receta.getTiempoPreparacion() == null
+                    || receta.getPorciones() <= 0) {
+                res.status(400);
+                return "Error: Datos de la receta no válidos o incompletos.";
+            }
+            if (pasos == null || pasos.isEmpty()) {
+                res.status(400);
+                return "Error: La lista de pasos no puede ser nula o vacía.";
+            }
+            if (recetaDerivadaXrecetasBases == null || recetaDerivadaXrecetasBases.isEmpty()) {
+                res.status(400);
+                return "Error: La lista de recetas derivadas no puede ser nula o vacía.";
+            }
+
+            recetaDAO.agregarReceta(receta);
+            recetaDerivadaDAO.agregarRecetaDerivada(recetaDerivada);
+            if (ingredientesXrecetas != null && !ingredientesXrecetas.isEmpty()) {
+                ingredientesXrecetas.forEach(ingredienteXreceta -> {
+                    recetaDAO.agregarIngredienteXreceta(ingredienteXreceta);
+                });
+            }
             pasos.forEach(paso -> {
                 pasoDAO.agregarPaso(paso);
             });
