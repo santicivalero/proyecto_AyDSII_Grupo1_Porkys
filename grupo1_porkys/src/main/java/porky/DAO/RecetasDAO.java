@@ -1,5 +1,7 @@
 package porky.DAO;
 
+import java.util.List;
+
 import org.sql2o.Connection;
 import org.sql2o.Sql2o;
 
@@ -26,5 +28,15 @@ public class RecetasDAO {
         try (Connection con = sql2o.open()) {
             con.createQuery(sql, true).bind(ingredienteXreceta).executeUpdate();
         }
+    }
+
+    public List<Recetas> listarRecetas(){
+        String sql = "SELECT * FROM `recetas`";
+
+        try (Connection con = sql2o.open()) {
+            return con.createQuery(sql)
+                    .executeAndFetch(Recetas.class);
+        }
+
     }
 }

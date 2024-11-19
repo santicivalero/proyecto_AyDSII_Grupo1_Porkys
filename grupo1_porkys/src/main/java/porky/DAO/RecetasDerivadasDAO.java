@@ -5,6 +5,7 @@ import org.sql2o.Sql2o;
 import porky.config.DataBaseConnection;
 import porky.models.RecetasDerivadas;
 import porky.models.RecetasDerivadasXrecetasBases;
+import java.util.List;
 
 public class RecetasDerivadasDAO {
     private Sql2o sql2o;
@@ -25,6 +26,16 @@ public class RecetasDerivadasDAO {
         try (Connection con = sql2o.open()){
             con.createQuery(sql, true).bind(recetaDerivadaXrecetaBase).executeUpdate();
         }
+    }
+
+    public List<RecetasDerivadas> listarRecetasDerivadas(){
+        String sql = "SELECT * FROM `recetasderivadas`";
+
+        try (Connection con = sql2o.open()) {
+            return con.createQuery(sql)
+                    .executeAndFetch(RecetasDerivadas.class);
+        }
+
     }
     
 }
