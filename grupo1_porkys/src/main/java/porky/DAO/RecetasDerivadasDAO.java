@@ -14,21 +14,21 @@ public class RecetasDerivadasDAO {
         this.sql2o = DataBaseConnection.getInstance();
     }
 
-    public void agregarRecetaDerivada(RecetasDerivadas recetaDerivada){
+    public void agregarRecetaDerivada(RecetasDerivadas recetaDerivada) {
         String sql = "INSERT INTO `recetasderivadas` (idRecetaDerivada, idReceta) VALUES (:idRecetaDerivada, :idReceta)";
-        try (Connection con = sql2o.open()){
+        try (Connection con = sql2o.open()) {
             con.createQuery(sql, true).bind(recetaDerivada).executeUpdate();
         }
     }
 
-    public void agregarRecetasDerivadasXrecetasBases(RecetasDerivadasXrecetasBases recetaDerivadaXrecetaBase){
+    public void agregarRecetasDerivadasXrecetasBases(RecetasDerivadasXrecetasBases recetaDerivadaXrecetaBase) {
         String sql = "INSERT INTO `recetasderivadasxrecetasbases` (idRecetaDerivada, idRecetaBase) VALUES (:idRecetaDerivada, :idRecetaBase)";
-        try (Connection con = sql2o.open()){
+        try (Connection con = sql2o.open()) {
             con.createQuery(sql, true).bind(recetaDerivadaXrecetaBase).executeUpdate();
         }
     }
 
-    public List<RecetasDerivadas> listarRecetasDerivadas(){
+    public List<RecetasDerivadas> listarRecetasDerivadas() {
         String sql = "SELECT * FROM `recetasderivadas`";
 
         try (Connection con = sql2o.open()) {
@@ -37,5 +37,15 @@ public class RecetasDerivadasDAO {
         }
 
     }
-    
+
+    public List<RecetasDerivadasXrecetasBases> listarRecetasDerivadasXrecetasBases() {
+        String sql = "SELECT * FROM `recetasderivadasxrecetasbases`";
+
+        try (Connection con = sql2o.open()) {
+            return con.createQuery(sql)
+                    .executeAndFetch(RecetasDerivadasXrecetasBases.class);
+        }
+
+    }
+
 }

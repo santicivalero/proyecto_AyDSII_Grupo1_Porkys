@@ -10,9 +10,9 @@ porky\main\PorkyMain.class
 porky\DAO\RecetasDAO.class
 porky\models\Pasos.class
 porky\models\RecetasBases.class
+porky\controllers\RecetasControlador.class
 porky\controllers\RecetasDerivadasControlador$3.class
 porky\models\Recetas.class
-porky\DAO\RecetasDerivadasXrecetasBasesDAO.class
 porky\models\RecetasDerivadas.class
 porky\config\DataBaseConnection.class
 porky\controllers\RecetasDerivadasControlador.class
