@@ -1,13 +1,25 @@
+<<<<<<< HEAD
+=======
+porky\DAO\RecetasBasesDAO.class
+>>>>>>> 2-agregarreceta
 porky\DAO\PasosDAO.class
 porky\models\Productos.class
 porky\controllers\RecetasDerivadasControlador$1.class
 porky\models\Ingredientes.class
+<<<<<<< HEAD
+=======
+porky\DAO\CrudDAO.class
+>>>>>>> 2-agregarreceta
 porky\DAO\RecetasDerivadasDAO.class
 porky\controllers\ProductosControlador.class
 porky\main\PorkyMain.class
 porky\DAO\RecetasDAO.class
 porky\models\Pasos.class
 porky\models\RecetasBases.class
+<<<<<<< HEAD
+=======
+porky\controllers\RecetasControlador.class
+>>>>>>> 2-agregarreceta
 porky\controllers\RecetasDerivadasControlador$3.class
 porky\models\Recetas.class
 porky\models\RecetasDerivadas.class

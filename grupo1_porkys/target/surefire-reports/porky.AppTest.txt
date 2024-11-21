@@ -1,4 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: porky.AppTest
 -------------------------------------------------------------------------------
+<<<<<<< HEAD
 Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.041 s -- in porky.AppTest
+=======
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.036 s -- in porky.AppTest
+>>>>>>> 2-agregarreceta

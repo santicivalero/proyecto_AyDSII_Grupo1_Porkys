@@ -8,8 +8,11 @@ import porky.models.Productos;
 
 import java.util.List;
 
-public class ProductosDAO {
+public class ProductosDAO extends CrudDAO<Productos>{
     private Sql2o sql2o;
+    private String tablePK = "idProducto";
+    private String tableName = "productos";
+
 
     public ProductosDAO() {
         this.sql2o = DataBaseConnection.getInstance();
@@ -24,4 +27,19 @@ public class ProductosDAO {
                     .executeAndFetch(Productos.class);
         }
     }
+
+    @Override
+    public Class<Productos> getTClass() {
+        return Productos.class;
+    }
+
+    @Override
+    public String getTablePK() {
+        return this.tablePK;
+    }
+
+    @Override
+    public String getTableName() {
+        return this.tableName;
+    } 
 }

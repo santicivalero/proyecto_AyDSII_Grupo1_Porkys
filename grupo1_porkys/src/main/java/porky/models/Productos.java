@@ -11,7 +11,7 @@ public class Productos {
     private int stock;
     private Boolean sinTacc;
     private String tamaño;
-    private int idrecetaDerivada;
     private int idReceta;
+    private int idRecetaDerivada;
 
 }
