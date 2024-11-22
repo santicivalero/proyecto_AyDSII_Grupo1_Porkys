@@ -6,16 +6,18 @@ import org.sql2o.Connection;
 import org.sql2o.Sql2o;
 
 import porky.config.DataBaseConnection;
+import porky.interfaces.IRecetasDAO;
 import porky.models.IngredientesXrecetas;
 import porky.models.Recetas;
 
-public class RecetasDAO {
+public class RecetasDAO implements IRecetasDAO {
     private Sql2o sql2o;
 
     public RecetasDAO() {
         this.sql2o = DataBaseConnection.getInstance();
     }
 
+    @Override
     public void agregarReceta(Recetas receta) {
         String sql = "INSERT INTO `recetas` (idReceta, nombre, tiempoPreparacion, porciones) VALUES (:idReceta, :nombre, :tiempoPreparacion, :porciones)";
         try (Connection con = sql2o.open()) {
@@ -23,6 +25,7 @@ public class RecetasDAO {
         }
     }
 
+    @Override
     public void agregarIngredienteXreceta(IngredientesXrecetas ingredienteXreceta) {
         String sql = "INSERT INTO `ingredientesxrecetas` (idIngrediente, idReceta, cantidad) VALUES (:idIngrediente, :idReceta, :cantidad)";
         try (Connection con = sql2o.open()) {
@@ -30,7 +33,8 @@ public class RecetasDAO {
         }
     }
 
-    public List<Recetas> listarRecetas(){
+    @Override
+    public List<Recetas> listarRecetas() {
         String sql = "SELECT * FROM `recetas`";
 
         try (Connection con = sql2o.open()) {

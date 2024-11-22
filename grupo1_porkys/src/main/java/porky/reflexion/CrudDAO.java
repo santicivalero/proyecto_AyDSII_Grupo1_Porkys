@@ -1,4 +1,4 @@
-package porky.DAO;
+package porky.reflexion;
 
 import java.lang.reflect.Field;
 
@@ -6,9 +6,10 @@ import org.sql2o.Connection;
 import org.sql2o.Sql2o;
 
 import porky.config.DataBaseConnection;
+import porky.interfaces.IProductosDAO;
 
 
-public abstract class CrudDAO<T> {
+public abstract class CrudDAO<T> implements IProductosDAO{
 
     private Sql2o sql2o;
 
@@ -50,5 +51,4 @@ public abstract class CrudDAO<T> {
         }
     }
     
-
 }
