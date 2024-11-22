@@ -5,19 +5,20 @@ import org.sql2o.Sql2o;
 
 import porky.config.DataBaseConnection;
 import porky.models.Productos;
+import porky.reflexion.CrudDAO;
 
 import java.util.List;
 
-public class ProductosDAO extends CrudDAO<Productos>{
+public class ProductosDAO extends CrudDAO<Productos> {
     private Sql2o sql2o;
     private String tablePK = "idProducto";
     private String tableName = "productos";
-
 
     public ProductosDAO() {
         this.sql2o = DataBaseConnection.getInstance();
     }
 
+    @Override
     public List<Productos> buscarProducto(String productoAbuscar) {
         String sql = "SELECT * FROM `productos` WHERE `nombre` LIKE :nombre";
 
@@ -41,5 +42,5 @@ public class ProductosDAO extends CrudDAO<Productos>{
     @Override
     public String getTableName() {
         return this.tableName;
-    } 
+    }
 }

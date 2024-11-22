@@ -1,19 +1,24 @@
-C:\Users\santi\Dropbox\Programming\Análisis y Diseño de Sistemas II\Proyecto\Segunda Iteracion\segunda_iteracion\Grupo1_Porkys\grupo1_porkys\src\main\java\porky\config\DataBaseConnection.java
-C:\Users\santi\Dropbox\Programming\Análisis y Diseño de Sistemas II\Proyecto\Segunda Iteracion\segunda_iteracion\Grupo1_Porkys\grupo1_porkys\src\main\java\porky\controllers\ProductosControlador.java
-C:\Users\santi\Dropbox\Programming\Análisis y Diseño de Sistemas II\Proyecto\Segunda Iteracion\segunda_iteracion\Grupo1_Porkys\grupo1_porkys\src\main\java\porky\controllers\RecetasControlador.java
-C:\Users\santi\Dropbox\Programming\Análisis y Diseño de Sistemas II\Proyecto\Segunda Iteracion\segunda_iteracion\Grupo1_Porkys\grupo1_porkys\src\main\java\porky\controllers\RecetasDerivadasControlador.java
-C:\Users\santi\Dropbox\Programming\Análisis y Diseño de Sistemas II\Proyecto\Segunda Iteracion\segunda_iteracion\Grupo1_Porkys\grupo1_porkys\src\main\java\porky\DAO\CrudDAO.java
-C:\Users\santi\Dropbox\Programming\Análisis y Diseño de Sistemas II\Proyecto\Segunda Iteracion\segunda_iteracion\Grupo1_Porkys\grupo1_porkys\src\main\java\porky\DAO\PasosDAO.java
-C:\Users\santi\Dropbox\Programming\Análisis y Diseño de Sistemas II\Proyecto\Segunda Iteracion\segunda_iteracion\Grupo1_Porkys\grupo1_porkys\src\main\java\porky\DAO\ProductosDAO.java
-C:\Users\santi\Dropbox\Programming\Análisis y Diseño de Sistemas II\Proyecto\Segunda Iteracion\segunda_iteracion\Grupo1_Porkys\grupo1_porkys\src\main\java\porky\DAO\RecetasBasesDAO.java
-C:\Users\santi\Dropbox\Programming\Análisis y Diseño de Sistemas II\Proyecto\Segunda Iteracion\segunda_iteracion\Grupo1_Porkys\grupo1_porkys\src\main\java\porky\DAO\RecetasDAO.java
-C:\Users\santi\Dropbox\Programming\Análisis y Diseño de Sistemas II\Proyecto\Segunda Iteracion\segunda_iteracion\Grupo1_Porkys\grupo1_porkys\src\main\java\porky\DAO\RecetasDerivadasDAO.java
-C:\Users\santi\Dropbox\Programming\Análisis y Diseño de Sistemas II\Proyecto\Segunda Iteracion\segunda_iteracion\Grupo1_Porkys\grupo1_porkys\src\main\java\porky\main\PorkyMain.java
-C:\Users\santi\Dropbox\Programming\Análisis y Diseño de Sistemas II\Proyecto\Segunda Iteracion\segunda_iteracion\Grupo1_Porkys\grupo1_porkys\src\main\java\porky\models\Ingredientes.java
-C:\Users\santi\Dropbox\Programming\Análisis y Diseño de Sistemas II\Proyecto\Segunda Iteracion\segunda_iteracion\Grupo1_Porkys\grupo1_porkys\src\main\java\porky\models\IngredientesXrecetas.java
-C:\Users\santi\Dropbox\Programming\Análisis y Diseño de Sistemas II\Proyecto\Segunda Iteracion\segunda_iteracion\Grupo1_Porkys\grupo1_porkys\src\main\java\porky\models\Pasos.java
-C:\Users\santi\Dropbox\Programming\Análisis y Diseño de Sistemas II\Proyecto\Segunda Iteracion\segunda_iteracion\Grupo1_Porkys\grupo1_porkys\src\main\java\porky\models\Productos.java
-C:\Users\santi\Dropbox\Programming\Análisis y Diseño de Sistemas II\Proyecto\Segunda Iteracion\segunda_iteracion\Grupo1_Porkys\grupo1_porkys\src\main\java\porky\models\Recetas.java
-C:\Users\santi\Dropbox\Programming\Análisis y Diseño de Sistemas II\Proyecto\Segunda Iteracion\segunda_iteracion\Grupo1_Porkys\grupo1_porkys\src\main\java\porky\models\RecetasBases.java
-C:\Users\santi\Dropbox\Programming\Análisis y Diseño de Sistemas II\Proyecto\Segunda Iteracion\segunda_iteracion\Grupo1_Porkys\grupo1_porkys\src\main\java\porky\models\RecetasDerivadas.java
-C:\Users\santi\Dropbox\Programming\Análisis y Diseño de Sistemas II\Proyecto\Segunda Iteracion\segunda_iteracion\Grupo1_Porkys\grupo1_porkys\src\main\java\porky\models\RecetasDerivadasXrecetasBases.java
+C:\Users\melch\OneDrive\Documentos\GitHub\Grupo1_Porkys\grupo1_porkys\src\main\java\porky\config\DataBaseConnection.java
+C:\Users\melch\OneDrive\Documentos\GitHub\Grupo1_Porkys\grupo1_porkys\src\main\java\porky\controllers\ProductosControlador.java
+C:\Users\melch\OneDrive\Documentos\GitHub\Grupo1_Porkys\grupo1_porkys\src\main\java\porky\controllers\RecetasControlador.java
+C:\Users\melch\OneDrive\Documentos\GitHub\Grupo1_Porkys\grupo1_porkys\src\main\java\porky\controllers\RecetasDerivadasControlador.java
+C:\Users\melch\OneDrive\Documentos\GitHub\Grupo1_Porkys\grupo1_porkys\src\main\java\porky\DAO\PasosDAO.java
+C:\Users\melch\OneDrive\Documentos\GitHub\Grupo1_Porkys\grupo1_porkys\src\main\java\porky\DAO\ProductosDAO.java
+C:\Users\melch\OneDrive\Documentos\GitHub\Grupo1_Porkys\grupo1_porkys\src\main\java\porky\DAO\RecetasBasesDAO.java
+C:\Users\melch\OneDrive\Documentos\GitHub\Grupo1_Porkys\grupo1_porkys\src\main\java\porky\DAO\RecetasDAO.java
+C:\Users\melch\OneDrive\Documentos\GitHub\Grupo1_Porkys\grupo1_porkys\src\main\java\porky\DAO\RecetasDerivadasDAO.java
+C:\Users\melch\OneDrive\Documentos\GitHub\Grupo1_Porkys\grupo1_porkys\src\main\java\porky\interfaces\IPasosDAO.java
+C:\Users\melch\OneDrive\Documentos\GitHub\Grupo1_Porkys\grupo1_porkys\src\main\java\porky\interfaces\IProductosDAO.java
+C:\Users\melch\OneDrive\Documentos\GitHub\Grupo1_Porkys\grupo1_porkys\src\main\java\porky\interfaces\IRecetasBasesDAO.java
+C:\Users\melch\OneDrive\Documentos\GitHub\Grupo1_Porkys\grupo1_porkys\src\main\java\porky\interfaces\IRecetasDAO.java
+C:\Users\melch\OneDrive\Documentos\GitHub\Grupo1_Porkys\grupo1_porkys\src\main\java\porky\interfaces\IRecetasDerivadasDAO.java
+C:\Users\melch\OneDrive\Documentos\GitHub\Grupo1_Porkys\grupo1_porkys\src\main\java\porky\main\PorkyMain.java
+C:\Users\melch\OneDrive\Documentos\GitHub\Grupo1_Porkys\grupo1_porkys\src\main\java\porky\models\Ingredientes.java
+C:\Users\melch\OneDrive\Documentos\GitHub\Grupo1_Porkys\grupo1_porkys\src\main\java\porky\models\IngredientesXrecetas.java
+C:\Users\melch\OneDrive\Documentos\GitHub\Grupo1_Porkys\grupo1_porkys\src\main\java\porky\models\Pasos.java
+C:\Users\melch\OneDrive\Documentos\GitHub\Grupo1_Porkys\grupo1_porkys\src\main\java\porky\models\Productos.java
+C:\Users\melch\OneDrive\Documentos\GitHub\Grupo1_Porkys\grupo1_porkys\src\main\java\porky\models\Recetas.java
+C:\Users\melch\OneDrive\Documentos\GitHub\Grupo1_Porkys\grupo1_porkys\src\main\java\porky\models\RecetasBases.java
+C:\Users\melch\OneDrive\Documentos\GitHub\Grupo1_Porkys\grupo1_porkys\src\main\java\porky\models\RecetasDerivadas.java
+C:\Users\melch\OneDrive\Documentos\GitHub\Grupo1_Porkys\grupo1_porkys\src\main\java\porky\models\RecetasDerivadasXrecetasBases.java
+C:\Users\melch\OneDrive\Documentos\GitHub\Grupo1_Porkys\grupo1_porkys\src\main\java\porky\reflexion\CrudDAO.java
