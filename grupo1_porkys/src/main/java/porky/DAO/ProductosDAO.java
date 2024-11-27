@@ -4,12 +4,13 @@ import org.sql2o.Connection;
 import org.sql2o.Sql2o;
 
 import porky.config.DataBaseConnection;
+import porky.interfaces.IProductosDAO;
 import porky.models.Productos;
 import porky.reflexion.CrudDAO;
 
 import java.util.List;
 
-public class ProductosDAO extends CrudDAO<Productos> {
+public class ProductosDAO extends CrudDAO<Productos> implements IProductosDAO{
     private Sql2o sql2o;
     private String tablePK = "idProducto";
     private String tableName = "productos";
