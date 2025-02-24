@@ -12,11 +12,11 @@
 
 #### Casos de uso trabajados:
 - Primera iteración:
--- Agregar receta derivada
--- Buscar producto
+  + Agregar receta derivada
+  + Buscar producto
 - Segunda iteración:
--- Agregar producto
--- Consultar lista de recetas
+  + Agregar producto
+  + Consultar lista de recetas
 
 #### Otras consideraciones:
 - Cada caso de uso tiene su respectivo prototipo de interfaz, especificación, modelo de diseño estático (con diagrama de clase) y modelo de diseño dinámico (con diagrama de secuencia). Estos se pueden visualizar en el PDF del repositorio, que también contiene el modelo relacional y el modelo de casos de uso del sistema.
@@ -25,6 +25,6 @@
 #### Autores:
 - Santiago Civalero
 - Leo Melchor
-- Melani Oronás.
+- Melani Oronás
 
 
